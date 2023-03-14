@@ -5,9 +5,12 @@ textInput.addEventListener("blur", (event) => {
 
     if (event.target.value.length === lengthOfInput) 
     {
-    textInput.classList.replace("validation-input", "validation-input.valid"); }
+    textInput.classList.add("valid"); 
+    console.log(textInput);}
     else {
-     textInput.classList.replace("validation-input", "validation-input.invalid"); 
+     textInput.classList.remove("valid"); 
+     textInput.classList.add("invalid")
+     console.log(textInput);
     }
 }
 );
