@@ -26,15 +26,15 @@ galleryList.style.display = "flex";
 galleryList.style.flexDirection = "column";
 galleryList.style.justifyContent = "space-between";
 const firstImageItem = document.querySelector("img");
-console.log(firstImageItem);
+
 firstImageItem.style.width = "300px";
 
 const lastListItem= galleryList.lastElementChild;
-console.log(lastListItem);
+
 const lastImage = lastListItem.querySelector("img");
-console.log(lastImage);
+
 lastImage.style.width = "300px";
 const secondListItem = lastListItem.previousElementSibling;
-console.log(secondListItem);
+
 const secondImage = secondListItem.querySelector("img");
 secondImage.style.width = "300px";
